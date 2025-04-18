@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (username === 'root' && password === 'root') {
             window.location.href = 'hello.html';
         } else if (username === 'kkk' && password === 'kkk') {
-            window.location.href = 'hello-world.html';
+            window.location.href = 'home-page.html';
         } else {
             errorElement.textContent = 'Incorrect username or password';
             errorElement.classList.remove('hidden');
