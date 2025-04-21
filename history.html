@@ -19,7 +19,40 @@
 </head>
 
 <body class="window-visible">
+  <svg width="0" height="0" style="display: block">
+    <defs>
+      <clipPath id="rating-clip">
+        <circle cx="8" cy="8" r="7"></circle>
+      </clipPath>
+    </defs>
+  </svg>
   <nav id="navigation" class="unselectable">
+    <div id="nav-container" style="display: flex">
+      <span id="navicon"><i class="fa fa-bars"></i></span>
+      <div style="display: flex; font-size: larger; align-items: center; height: 100%; gap: 1em;">
+        <span title="Ngôn ngữ">
+          <div class="navbar-icon" id="nav-lang-icon" aria-hidden="true" style="font-size: 22.5px;">
+            <h4 class="black nav-right-text">Tiếng Việt</h4>
+          </div>
+          <div id="lang-dropdown" class="dropdown" role="tooltip" data-popper-placement="bottom-end"
+            style="position: absolute; inset: 0px auto auto 0px; margin: 0px; min-width: 60.5125px; transform: translate(770px, 49px); display: none;">
+            <div value="vi" class="dropdown-item lang-dropdown-item" style="font-weight: bold">
+              Tiếng Việt
+            </div>
+            <div value="en" class="dropdown-item lang-dropdown-item" style="">
+              English
+            </div>
+            <div class="popper-arrow" data-popper-arrow=""
+              style="position: absolute; left: 0px; transform: translate(0px, 0px);"></div>
+          </div>
+        </span>
+        <span title="Dark Mode">
+          <a class="far fa-moon navbar-icon black" id="nav-darkmode-icon" aria-hidden="true" href="?darkmode=1"
+            style="font-size: 22.5px;"></a>
+        </span>
+      </div>
+    </div>
+    <div id="nav-shadow"></div>
   </nav>
   <div id="page-container">
     <div id="media">
@@ -74,40 +107,71 @@
                     </span>
                     <span class="post-authors"><span class="rating rate-master admin ">
                         <a>
-                          Admin
+                          THPT Trần Hưng Đạo
                         </a>
                       </span>
                       <i title="Sticky" class="fa fa-star fa-fw"></i></span>
-                    <span style="float: right">
-                      <a href="/post/2728-lqdoj-contest-15-summary#comments" class="blog-comment-count-link">
-                        <i class="fa fa-comments blog-comment-icon"></i>
-                        <span class="blog-comment-count">
-                          16
-                        </span>
-                      </a>
-                    </span>
                 </div>
-                <h2 class="title">
-                  <a>Hello</a>
-                </h2>
                 <div class="blog-description">
                   <div class="summary content-description">
                     <div class="md-typeset content-description">
-                      <p><strong>Hello các bạn</strong></p>
+                      <p><strong>Lịch sử nhà trường</strong></p>
                       </ul>
-                      <p>Miền Nam thì có hoa Mai, gặp nhau phải có 1, 2 lời chào. Miền Bắc thì có hoa
-                        Đào, gặp nhau phải có lời chào đầu tiên. Và lời đầu tiên cũng như là lời cuối
-                        cùng. Em xin hết!!!
+                      <p>Trường được thành lập từ năm 1999 theo quyết định số: 896/QĐ-UB  ngày 14 
+                        tháng 6 năm 1999 của Ủy ban nhân dân tỉnh Quảng Bình, trường được đóng trên 
+                        mảnh đất truyền thống cách mạng thuộc xã Hưng Đạo cũ, do đó được mang tên 
+                        THPT Trần Hưng Đạo.
+
+                        Trường được tách ra từ trường Phổ thông cấp 2-3 Tân Thủy. Ngày 01 tháng 9 
+                        năm 2001 Trường THPT Trần Hưng Đạo bắt đầu hoạt động. Đây là bước ngoặt đánh 
+                        dấu sự phát triển đi lên về mọi mặt của nhà trường. Trường trở thành trong 
+                        những điểm sáng văn hóa cho giáo dục Quang Bình.
+                        
+                        Trường THPT Trần Hưng Đạo nằm về phía Đông - Nam của huyện, trên địa bàn xã 
+                        Hưng Thủy, huyện Lệ Thủy, tỉnh Quảng Bình. Mặc dù đa dạng về địa hình, nơi ở 
+                        hoc sinh đến từ nhiều xã như: Tân Thủy, Dương Thủy, Thái Thủy, Mỹ Thủy, Trường 
+                        Thủy, Sen Thủy, Ngư Thủy, Cam Thủy, Hưng Thủy...nhưng không ngăn cản sự cố gắng
+                        và quyết tâm của thầy và trò nên đã tạo ra một môi trường thân thiện, tích cực,
+                        chất lượng giáo dục ngày một nâng cao....
+                        
+                        Tuy mới chỉ thành lập và bắt đầu hoạt động được hơn 20 năm nhưng nhà trường 
+                        không ngừng tăng trưởng về mọi mặt:
+                           - Về cơ sở vật chất khá đầy đủ, khang trang với nhiều phòng học, phòng chức 
+                             năng, phòng thực hành, nhà hiệu bộ, nhà thi đấu đa năng,...sân chơi, bãi 
+                             tập vườn hoa, cây cảnh xanh sạch đẹp.
+                           - Cùng với cơ sở vật chất, đội ngũ giáo viên không ngừng tăng về số lượng và 
+                           chất lượng.                       
+                           - Năm học 1996 - 1997 nhà trường chỉ có 22 cán bộ giáo viên và nhân viên, đến 
+                           năm học 2023-2024 có 68 cán bộ, giáo viên và nhân viên, đội ngũ giáo viên đảm 
+                           bảo 100% đạt chuẩn và trên chuẩn, trong đó có 24 giáo viên có trình độ thạc sỹ, 
+                           22 giáo viên dạy giỏi cấp tỉnh. Nhiều giáo viên được công nhận là chiến sỹ thi 
+                           đua cấp tỉnh, cấp cơ sở và được Bộ giáo dục, chủ tịch Ủy ban Tỉnh tặng Bằng khen.
+                        
+                        Quy mô trường ngày càng phát triển. Vào năm đầu thành lập (1996- 1997) trường mới 
+                        chỉ có 9 lớp với 395 học sinh nhưng đến nay (2023- 2024) trường đã có 30 lớp với 
+                        1255 học sinh.
+                        Chất lượng đào tạo 2 mặt không ngừng được nâng lên. Trường nằm trong tốp dẫn đầu 
+                        của khối Trung học phổ thông của tỉnh. Qua 20 năm  phấn đấu. Kết  quả đạt được rất 
+                        đáng tự hào: Tỷ lệ thi đổ tốt nghiệp hằng năm xấp xỉ 100%, tỷ lệ thi đổ các trường 
+                        đại học, Cao đẳng trên 45%; Thi  học xinh giỏi cấp Tỉnh  năm học 2022-2023 đặt 66 
+                        giải  cá nhân và 8 giải đồng đội. Có nhiều học sinh được dự đội tuyển hoc sinh giỏi 
+                        cấp Quốc gia ...
+                        
+                        Từ khi hình thành cho đến nay Chi bộ/Đảng bộ luôn được công nhận danh hiệu trong 
+                        sạch vững mạnh và trong sạch vững mạnh tiêu biểu; Các tổ chức Công đoàn, Đoàn Thanh 
+                        niên đều đạt danh hiệu vững mạnh và vững mạnh xuất sắc; Trường công nhận là đơn vị 
+                        văn hóa từ  2005 đến  nay; Nhiều năm liền trường được Chủ tịch ủy ban nhân dân tỉnh 
+                        tặng danh hiệu tập thể lao động xuất sắc. Tiếp tục nâng cao chất lượng đào tạo, nhà 
+                        trường luôn quan tâm đến công tác nâng cao trình độ giáo viên, đầu tư đồng bộ theo 
+                        hướng chuẩn hoá, để trường  THPT Trần Hưng Đạo xứng đáng là điểm sáng cho nghành 
+                        giáo dục tỉnh Quảng Bình, là điểm xuất phát cho nhiều thế hệ sinh trưởng thành, là 
+                        niềm tin tuỏng, tự hào của giáo viên, phu huynh và học sinh.
                       </p>
 
                     </div>
                   </div>
                 </div>
-                <div class="actionbar-box">
-                </div>
               </section>
-
-              <div class="has_next" style="display: none;" value="1"></div>
             </div>
             <div class="right-sidebar" style="display: none;">
               <div class="blog-sidebox sidebox">
